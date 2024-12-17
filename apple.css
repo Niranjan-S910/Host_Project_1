@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    position: fixed;
+    background-color: black;
+    color: lightgray;
+    width: 100%;
+    height: 60px;
+    font-size: 12pt;
+}
+
+ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 10px 50px;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    margin-left: 60px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding-top: 40px;
+}
+
+#pic1, #pic2, #pic3 {
+    background-image: url('./bg1.jpg');
+    background-size: cover;
+    height: 90vh;
+    /* background-position-y: -150px; */
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pic > * {
+    display: flex;
+    justify-content: center;
+}
+
+.pic h1 {
+    font-size: 40pt;
+}
+
+.pic h2 {
+    font-size: 26pt;
+    font-weight: lighter;
+}
+
+.pic a {
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#pic2 {
+    background-image: url('./bg2.jpg');
+    /* background-position-y: -50px; */
+}
+
+#pic3 {
+    background-image: url('bg3.jpg');
+    /* background-position-y: -100px; */
+}
+
+.category {
+    display: flex;
+}
+
+.category .box {
+    text-align: center;
+    height: 80vh;
+    width: 50%;
+    margin: 10px;
+    background-size: cover;
+    padding-top: 20px;
+    color: white;
+}
+
+.category .box a { 
+    text-decoration: none;
+    font-size: 14pt;
+    padding-top: 20px;
+}
+
+#box1 {
+    background-image: url('./card1.jpg');
+}
+
+#box2 {
+    background-image: url('./card2.jpg');
+    color: black;
+}
+
+#box3 {
+    background-image: url('./card3.jpg');
+}
+
+#box4 {
+    background-image: url('./card4.jpg');
+    color: black;
+}
+
+#box2 .label {
+    color: red;
+    font-size: 14pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+footer {
+    background-color: rgba(211,211,211,0.8);
+    width: 100%;
+    height: 200px;
+}
+
+footer .container {
+    width: 80%;
+    margin: 20px auto;
+    padding-top: 20px;
+}
+
+footer .container > * {
+    font-size: 10pt;
+    color: gray;
+}
+
+@media only screen and(max-width:500px){
+
+    nav {
+        position: inline;
+        background-color: black;
+        color: lightgray;
+        width: 100%;
+        height: 60px;
+        font-size: 12pt;
+        margin-left: -30px;
+    }
+    
+    ul {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        padding: 10px ;
+        align-items: center;
+    }
+    
+    li {
+
+        margin-left: 33px;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    main {
+        padding-top: 40px;
+    }
+    
+    #pic1, #pic2, #pic3 {
+        background-image: url('./bg1.jpg');
+        background-size: cover;
+        height: 90vh;
+        /* background-position-y: -150px; */
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .pic > * {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pic h1 {
+        font-size: 40pt;
+    }
+    
+    .pic h2 {
+        font-size: 26pt;
+        font-weight: lighter;
+    }
+    
+    .pic a {
+        font-size: 16pt;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    #pic2 {
+        background-image: url('./bg2.jpg');
+        /* background-position-y: -50px; */
+    }
+    
+    #pic3 {
+        background-image: url('bg3.jpg');
+        /* background-position-y: -100px; */
+        color: white;
+    }
+    
+    
+    .category {
+        display: flex;
+    }
+    
+    .category .box {
+        text-align: center;
+        height: 80vh;
+        width: 50%;
+        margin: 10px;
+        background-size: cover;
+        padding-top: 20px;
+        color: white;
+    }
+    
+    .category .box a { 
+        text-decoration: none;
+        font-size: 14pt;
+        padding-top: 20px;
+    }
+    
+    #box1 {
+        background-image: url('./card1.jpg');
+    }
+    
+    #box2 {
+        background-image: url('./card2.jpg');
+        color: white;
+    }
+    
+    #box3 {
+        background-image: url('./card3.jpg');
+    }
+    
+    #box4 {
+        background-image: url('./card4.jpg');
+        color: black;
+    }
+    
+    #box2 .label {
+        color: red;
+        font-size: 14pt;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    a:hover {
+        text-decoration: underline !important;
+    }
+    
+    footer {
+        background-color: rgba(211,211,211,0.8);
+        width: 100%;
+        height: 200px;
+    }
+    
+    footer .container {
+        width: 80%;
+        margin: 20px auto;
+        padding-top: 20px;
+    }
+    
+    footer .container > * {
+        font-size: 10pt;
+        color: gray;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        position: static;
+        height: auto;
+        font-size: 10pt;
+        padding: 5px;
+       
+    }
+    
+    ul {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+
+    li {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding-top: 20px;
+    }
+
+    #pic1, #pic2, #pic3 {
+        height: 60vh; /* Reduce height for smaller screens */
+        background-size: cover; /* Ensure the image fills the area without repeating */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent repeating */
+        margin-bottom: 5px;
+    }
+
+    .pic h1 {
+        font-size: 24pt; /* Reduce heading font size */
+    }
+
+    .pic h2 {
+        font-size: 16pt; /* Adjust subheading size */
+    }
+
+    .pic a {
+        font-size: 12pt; /* Smaller button text */
+    }
+
+    .category {
+        flex-direction: column; /* Stack categories vertically */
+        gap: 15px;
+    }
+
+    .category .box {
+        width: 100%; /* Full width on smaller screens */
+        height: 50vh; /* Adjust height for better fit */
+        margin: 5px 0;
+        background-size: cover; /* Prevent image cut-off in boxes */
+        background-position: center; /* Center image in the box */
+        background-repeat: no-repeat; /* Prevent repeating */
+    }
+
+    footer {
+        height: auto; /* Allow dynamic height */
+        text-align: center;
+        padding: 10px 5px;
+    }
+
+    footer .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    footer .container > * {
+        font-size: 8pt; /* Smaller footer text */
+    }
+}
